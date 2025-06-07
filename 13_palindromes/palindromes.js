@@ -5,13 +5,11 @@ const palindromes = function (str) {
     let cleanedstr = ''
     for(let i in str){
         if(punctuations.includes(str[i])){
-           
             continue
         }
         cleanedstr += str[i];
         str1 = str[i]+str1
     }
-    
     return cleanedstr == str1
 };
 
